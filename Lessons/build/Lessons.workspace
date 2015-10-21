@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="SDL2 Lessons">
+		<Project filename="Lesson0B.cbp" />
+		<Project filename="Lesson1A.cbp" />
+		<Project filename="Lesson1B.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
