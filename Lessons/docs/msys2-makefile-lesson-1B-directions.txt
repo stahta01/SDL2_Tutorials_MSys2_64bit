@@ -1,0 +1,35 @@
+What I did to try to follow the steps from here 
+    http://www.willusher.io/sdl2%20tutorials/2014/08/01/postscript-1-easy-cleanup/
+
+# From inside MinGW Shell
+
+cd ~/devel/Lessons
+scite include/cleanup.h
+# Copy code from URL
+
+mkdir -p ~/devel/Lessons/Lesson1B/src 
+cd ~/devel/Lessons
+
+cp Lesson1A/src/main.cpp  Lesson1B/src/main.cpp
+
+
+scite Lesson1B/src/main.cpp
+# Do the second set of code changes from the URL above.
+# The one with this line "cleanup(tex, ren, win);"
+# Remember to leave the this line in "SDL_Quit();"
+# Add an include at the top of "#include "cleanup.h""
+
+
+# Copy last makefile to the new makefile name.
+cp build/Lesson1A.mak  build/Lesson1B.mak
+
+cd ~/devel/Lessons/build
+scite Lesson1B.mak
+# Change "Lesson1A" to "Lesson1B"
+
+make -f Lesson1B.mak clean
+make -f Lesson1B.mak
+
+# Run the program.
+../bin/SDL_Lesson1B.exe &
+
