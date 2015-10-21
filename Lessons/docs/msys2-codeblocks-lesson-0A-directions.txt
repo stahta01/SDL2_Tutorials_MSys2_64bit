@@ -1,13 +1,9 @@
+Prepwork: setup the Code::Blocks Compiler using directions in "msys2-codeblocks-toolchain-settings.txt"
+
 What I did to try to change the steps from here so they work under MSys2 using Code::Blocks IDE.
     http://www.willusher.io/sdl2%20tutorials/2013/08/15/lesson-0-mingw/
 
 # Open "MinGW Shell"
-# cd to the correct mingw folder
-cd /mingw32
-# or
-cd /mingw64
-# Record "pwd -W" path will need it to setup the Code::Blocks Compiler toolchain settings.
-pwd -W
 
 # Create top development folder; you should be able to use a different top development folder but my directions use "~/devel"
 mkdir -p ~/devel
