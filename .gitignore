@@ -26,3 +26,5 @@
 *.exe
 *.out
 *.app
+/Lessons/build/*.depend
+/Lessons/build/*.layout
