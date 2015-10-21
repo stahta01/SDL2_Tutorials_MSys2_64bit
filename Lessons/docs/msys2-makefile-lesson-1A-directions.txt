@@ -1,0 +1,37 @@
+What I did to try to follow the steps from here 
+    http://www.willusher.io/sdl2%20tutorials/2013/08/17/lesson-1-hello-world/
+
+# From inside MinGW Shell
+
+mkdir -p ~/devel/Lessons/Lesson1A/src 
+cd ~/devel/Lessons
+
+cp Lesson0B/src/main.cpp  Lesson1A/src/main.cpp
+
+
+scite Lesson1A/src/main.cpp
+# Remove all the code inside the main function
+# Do the code changes from the URL above.
+# Add "return 0;" to end of main function.
+
+
+# Copy last makefile to the new makefile name.
+cp build/Lesson0B.mak  build/Lesson1A.mak
+
+cd ~/devel/Lessons/build
+scite Lesson1A.mak
+# Change "Lesson0" and "Lesson0B" to "Lesson1A"
+# The option "-mconsole" is likely needed.
+# Change line "LDFLAGS = $(SDL_LIB)" to "LDFLAGS = -mconsole $(SDL_LIB)"
+
+make -f Lesson1A.mak clean
+make -f Lesson1A.mak
+
+# Run the program. I guessed on needing an "&" at the end.
+../bin/SDL_Lesson1A.exe &
+
+# I got this output "SDL_LoadBMP Error: Couldn't open C:\Apps64\MSys2_SDL2\home\stahta01\devel\Lessons\res\Lesson1\hello.bmp"
+
+# Copy the res folder and its files to under Lessons folder.
+# Run the program a second time it should work this time.
+../bin/SDL_Lesson1A.exe &
