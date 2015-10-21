@@ -1,0 +1,5 @@
+# Open "MinGW Shell"
+# cd to the correct mingw folder
+cd /mingw32
+# Record "pwd -W" path will need it to setup the Code::Blocks Compiler toolchain settings.
+pwd -W

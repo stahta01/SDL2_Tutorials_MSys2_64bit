@@ -1,0 +1,9 @@
+Plan is to use MSys2's MinGW64 64bit GCC C++ Compiler and custom makefiles the first time thru the directions.
+    Posible variations for future work include
+        Use Code::Blocks IDE instead of custom makefiles.
+        Use CodeLite IDE instead of custom makefiles.
+        CLang instead of GCC
+        C Instead C++
+        32bit instead of 64bit Windows 7
+        Use CMake instead of custom makefiles.
+        Premake instead of custom makefiles.

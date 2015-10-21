@@ -1,0 +1,16 @@
+Lessons/
+    docs/
+        My Directions are stored here
+    build/
+        Lesson 1's manually created makefile named Lesson1.mak
+        The Code::Blocks Project files are going to be stored here
+    bin/
+        executables in here
+    res/
+        Lesson1/
+            Lesson 1's resource assets are stored here
+    Lesson1/
+        src/
+            Lesson 1's source code
+    include/
+        Headers shared between lessons
