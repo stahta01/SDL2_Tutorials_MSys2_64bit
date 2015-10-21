@@ -1,0 +1,31 @@
+What I did to try to change the steps from here so they work under MSys2
+    http://www.willusher.io/sdl2%20tutorials/2013/08/15/lesson-0-mingw/
+
+# Open "MinGW Shell"
+# The output when ran from "MinGW64 Shell"
+sdl2-config --cflags # -I/mingw64/include/SDL2 -Dmain=SDL_main
+sdl2-config --libs   # -L/mingw64/lib -lmingw32 -lSDL2main -lSDL2 -mwindows
+cd /mingw64/include/SDL2
+pwd -W # Record the Windows path for usage in makefile
+# Windows path := C:/Apps64/MSys2_SDL2/mingw64/include/SDL2
+
+mkdir -p ~/devel/Lessons/Lesson0A/src
+cd ~/devel/Lessons/Lesson0A/src
+scite Makefile
+# Copy the Makefile from lesson-0-mingw into Scite and save it.
+# Change the "del" command in the clean step to "rm" in both places.
+
+# Change the line with "SDL_LIB =" to have the output from sdl2-config --libs
+# Change the line with "SDL_INCLUDE =" to have the output from sdl2-config --cflags
+# But change the path for SDL2 to use the result of the "pwd -W" command above
+# Change the line with "LDFLAGS =" to "LDFLAGS = $(SDL_LIB)"
+# Save the Makefile
+
+scite main.cpp 
+# Paste the Test Program into Editor
+
+# make the program to verify the program compiles and links without error.
+make
+
+# How to run the program; note the program does nothing that shows at this time. 
+./SDL_Lesson0.exe
