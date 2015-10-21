@@ -1,0 +1,35 @@
+What I did to try to follow the steps from here 
+    http://www.willusher.io/sdl2%20tutorials/2014/06/16/postscript-0-properly-finding-resource-paths/
+
+
+mkdir -p ~/devel/Lessons/include
+cd ~/devel/Lessons/include
+
+scite res_path.h
+# Copy the getResourcePath code from the URL above and save it.
+# Change line "#include <SDL.h>" to "#include <SDL2/SDL.h>"
+
+mkdir -p ~/devel/Lessons/Lesson0B/src
+cd ~/devel/Lessons/Lesson0B/src
+
+scite main.cpp
+# Copy the "Using the Resource Path Lookup" code into text editor.
+
+
+mkdir -p ~/devel/Lessons/build
+cd ~/devel/Lessons
+cp Lesson0A/src/Makefile build/Lesson0B.mak
+
+cd ~/devel/Lessons/build
+scite Lesson0B.mak
+# Change "main.cpp" to "../Lesson0B/src/main.cpp"
+# Change line "SDL_INCLUDE = " by adding "-I../include " without the quote after the "= ".
+# Change line "EXE = SDL_Lesson0.exe" to "EXE = ../bin/SDL_Lesson0.exe" 
+
+mkdir -p ~/devel/Lessons/bin
+make -f Lesson0B.mak
+
+# Run the program.
+../bin/SDL_Lesson0.exe
+
+# I got this output "Resource path is: C:\Apps64\MSys2_SDL2\home\stahta01\devel\Lessons\res\"
