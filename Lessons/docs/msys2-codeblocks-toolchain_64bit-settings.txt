@@ -3,3 +3,13 @@
 cd /mingw64
 # Record "pwd -W" path will need it to setup the Code::Blocks Compiler toolchain settings.
 pwd -W
+
+Use the path from above as the "Compiler Installation Directory"
+
+C Compiler:                 x86_64-w64-mingw32-gcc.exe
+
+C++ Compiler:               x86_64-w64-mingw32-g++.exe
+
+Linker for Dynamic Libs:    x86_64-w64-mingw32-g++.exe
+
+Linker for Static Libs:     x86_64-w64-mingw32-gcc-ar.exe
