@@ -1,3 +1,5 @@
+For MSys2 Installation, Please read http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/
+
 # MSys2 MinGW 64 bit Package install (Ran from "MSys2 Shell")
 pacman -S mingw-w64-x86_64-SDL2
 pacman -S mingw-w64-x86_64-gcc
@@ -6,4 +8,5 @@ pacman -S mingw-w64-x86_64-scite      # Going to use as my Git Text Editor
 # pacman -S mingw-w64-x86_64-codelite   # Will wait till it is needed to install it.
 # pacman -S mingw-w64-x86_64-cmake      # Will wait till it is needed to install it.
 
+# Set git to use scite as the text editor
 git config --global core.editor "'/mingw64/bin/scite'"
