@@ -1,5 +1,5 @@
 # SDL2_Tutorials_MSys2_64bit
-I am trying to work through the SDL2 tutorials using Code::Blocks IDE with MSys2 and Windows 7 64bit;
+I am trying to work through the SDL2 tutorials using Code::Blocks IDE with MSys2 and Windows 10 64bit;
 From http://wiki.libsdl.org and Will Usher Website http://www.willusher.io/pages/sdl2/
 
 
