@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="../bin/Lesson1A" prefix_auto="1" extension_auto="1" />
+				<Option output="../bin/Lesson1B" prefix_auto="1" extension_auto="1" />
 				<Option object_output="../obj/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
