@@ -4,5 +4,7 @@
 		<Project filename="Lesson0B.cbp" />
 		<Project filename="Lesson1A.cbp" />
 		<Project filename="Lesson1B.cbp" />
+		<Project filename="Lesson2.cbp" />
+		<Project filename="Lesson3.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
